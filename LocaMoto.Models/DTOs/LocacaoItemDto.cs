@@ -1,14 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace LocaMoto.Models.DTOs
+﻿namespace LocaMoto.Models.DTOs
 {
-    internal class LocacaoItem
+    public class LocacaoItemDto
     {
         public int Id { get; set; }
 
         public int LocacaoId { get; set; }
         public int ItemServicoId { get; set; }
-             
+
         public decimal Quantidade { get; set; }
     }
 }

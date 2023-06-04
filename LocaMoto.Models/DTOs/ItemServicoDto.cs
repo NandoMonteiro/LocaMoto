@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LocaMoto.Models.DTOs
 {
-    internal class ItemServico
+    public class ItemServicoDto
     {
         public int Id { get; set; }
 

@@ -2,7 +2,7 @@
 
 namespace LocaMoto.Models.DTOs
 {
-    internal class Categoria
+    public class CategoriaDto
     {
         public int Id { get; set; }
 

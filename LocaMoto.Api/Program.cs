@@ -1,4 +1,5 @@
 using LocaMoto.Api.Context;
+using LocaMoto.Api.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,8 @@ builder.Services.AddDbContext<AppDbContext>(Options =>
 {
     Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddScoped<IMotoRepository, MotoRepository>();
 
 var app = builder.Build();
 

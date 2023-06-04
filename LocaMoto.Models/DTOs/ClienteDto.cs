@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LocaMoto.Models.DTOs
+﻿namespace LocaMoto.Models.DTOs
 {
-    internal class Cliente
+    public class ClienteDto
     {
         public int Id { get; set; }
 
